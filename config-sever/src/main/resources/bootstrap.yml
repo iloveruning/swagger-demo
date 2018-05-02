@@ -4,5 +4,15 @@ spring:
   cloud:
     config:
       server:
+        git:
+          uri: https://github.com/iloveruning/swagger-demo.git
+          search-paths: config-repo
+
+
 server:
   port: 8092
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8717/eureka/
+

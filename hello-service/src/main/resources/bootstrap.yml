@@ -1,0 +1,28 @@
+
+spring:
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://localhost:8092/
+
+server:
+  port: 8090
+#spring:
+#  application:
+#    name: hello-service
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8717/eureka/
+#swagger:
+#  base-package: com.iflytek.helloservice.controller
+#  title: hello-service-api
+#  enable: true
+#  name: llchen12
+#  email: llchen12@iflytek.com
+#  description: 更多人工智能与语音能力请关注：http://aiui.xfyun.cn/
+#  version: 1.0
+
+
