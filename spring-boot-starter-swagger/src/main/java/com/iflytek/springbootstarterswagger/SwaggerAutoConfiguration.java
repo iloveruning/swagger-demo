@@ -1,10 +1,12 @@
 package com.iflytek.springbootstarterswagger;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -25,7 +27,7 @@ public class SwaggerAutoConfiguration {
     }
 
     @Bean
-    //@ConditionalOnMissingBean
+    @ConditionalOnProperty(prefix = "swagger", name = {"enable"}, havingValue = "true")
     public Docket getSwagger2Docket() {
         final String[] basePackages = this.splitBasePackages(properties.getBasePackage());
 
@@ -57,7 +59,7 @@ public class SwaggerAutoConfiguration {
             builder.termsOfServiceUrl(this.properties.getTermsOfServiceUrl());
         }
 
-        docket.apiInfo(builder.build());
+        builder.contact(new Contact(this.properties.getName(),this.properties.getUrl(),this.properties.getEmail()));
 
         if (StringUtils.hasLength(this.properties.getGroupName())) {
             docket.groupName(this.properties.getGroupName());
@@ -68,7 +70,8 @@ public class SwaggerAutoConfiguration {
             docket.pathMapping(this.properties.getPathMapping());
         }
 
-        return docket.select()
+        return docket.apiInfo(builder.build())
+                .select()
                 .apis(h -> {
                     if (basePackages == null) {
                         return true;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-sever/config-sever.iml" filepath="$PROJECT_DIR$/config-sever/config-sever.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euraka-server/euraka-server.iml" filepath="$PROJECT_DIR$/euraka-server/euraka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-service/hello-service.iml" filepath="$PROJECT_DIR$/hello-service/hello-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-service/rabbitmq-service.iml" filepath="$PROJECT_DIR$/rabbitmq-service/rabbitmq-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-swagger/spring-boot-starter-swagger.iml" filepath="$PROJECT_DIR$/spring-boot-starter-swagger/spring-boot-starter-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/swagger-demo.iml" filepath="$PROJECT_DIR$/.idea/swagger-demo.iml" />
+    </modules>
+  </component>
+</project>

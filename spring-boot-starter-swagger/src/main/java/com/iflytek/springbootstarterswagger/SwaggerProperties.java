@@ -11,7 +11,14 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "swagger")
 public class SwaggerProperties {
 
+
+
     public static final String PREFIX="swagger";
+
+    /**
+     * 是否开启swagger
+     */
+    private boolean enable=false;
 
     /**
      * api组的名字，会在swagger-ui的api下拉列表中显示
@@ -53,5 +60,20 @@ public class SwaggerProperties {
      * 授权的协议的url
      */
     private String licenseUrl;
+
+    /**
+     *联系人
+     */
+    private String name="";
+
+    /**
+     * 联系人url
+     */
+    private String url="";
+
+    /**
+     * 联系人email
+     */
+    private String email="";
 
 }
