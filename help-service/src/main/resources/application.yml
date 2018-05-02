@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: help-service
+server:
+  port: 8091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8717/eureka/
+ribbon:
+  ConnectTimeout: 500
+  ReadTimeout: 5000
+
+swagger:
+  title: help-service-api
+  basePackage: com.iflytek.helpservice.controller
+  terms-of-service-url: http://aiui.xfyun.cn/
+  version: 1.0
+
