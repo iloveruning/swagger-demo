@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: trace-2
+server:
+  port: 8096
+

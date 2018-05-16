@@ -16,4 +16,8 @@ swagger:
   basePackage: com.iflytek.helpservice.controller
   terms-of-service-url: http://aiui.xfyun.cn/
   version: 1.0
+  contact:
+    name: llchen12
+    url: http://aiui.xfyun.cn/
+    email: llchen12@iflytek.com
 

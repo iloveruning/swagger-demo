@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.iflytek</groupId>
-        <artifactId>swagger-demo</artifactId>
+        <artifactId>spring-cloud-demo</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>euraka-server</artifactId>
@@ -17,7 +17,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
 
     </dependencies>

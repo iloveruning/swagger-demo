@@ -1,0 +1,33 @@
+spring:
+  sleuth:
+    sampler:
+      percentage: 0.12   #抽样百分比
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: localhost:5672
+#  zipkin:
+#    base-url: http://localhost:9411
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8717/eureka/
+ribbon:
+  ConnectTimeout: 500
+  ReadTimeout: 5000
+
+swagger:
+  title: help-service-api
+  basePackage: com.iflytek.helpservice.controller
+  terms-of-service-url: http://aiui.xfyun.cn/
+  version: 1.0
+  contact:
+    name: llchen12
+    url: http://aiui.xfyun.cn/
+    email: llchen12@iflytek.com
+
+logging:
+  level:
+    org.springframework.web.servlet.DispatcherServlet: debug
+

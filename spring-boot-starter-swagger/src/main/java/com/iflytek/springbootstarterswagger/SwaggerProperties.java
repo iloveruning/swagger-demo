@@ -2,6 +2,7 @@ package com.iflytek.springbootstarterswagger;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
 /**
  * @author llchen12
@@ -61,6 +62,16 @@ public class SwaggerProperties {
      */
     private String licenseUrl;
 
+
+    @NestedConfigurationProperty
+    private Contact contact;
+
+}
+
+@Data
+@ConfigurationProperties(prefix = "contact")
+class Contact{
+
     /**
      *联系人
      */
@@ -75,5 +86,4 @@ public class SwaggerProperties {
      * 联系人email
      */
     private String email="";
-
 }

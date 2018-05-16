@@ -6,7 +6,15 @@
     <file url="file://$PROJECT_DIR$/config-sever" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/euraka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hello-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/help-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msg-bus" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-starter-swagger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trace-1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trace-2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin-server" charset="UTF-8" />
   </component>
 </project>

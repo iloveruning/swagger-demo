@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          group: group-1
+          destination: raw-sensor-data
+          content-type: application/json

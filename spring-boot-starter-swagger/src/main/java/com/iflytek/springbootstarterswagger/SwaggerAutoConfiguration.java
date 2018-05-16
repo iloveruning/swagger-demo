@@ -27,7 +27,7 @@ public class SwaggerAutoConfiguration {
     }
 
     @Bean
-    @ConditionalOnProperty(prefix = "swagger", name = {"enable"}, havingValue = "true")
+    @ConditionalOnProperty(value="swagger.enable", havingValue = "true")
     public Docket getSwagger2Docket() {
         final String[] basePackages = this.splitBasePackages(properties.getBasePackage());
 
@@ -59,7 +59,10 @@ public class SwaggerAutoConfiguration {
             builder.termsOfServiceUrl(this.properties.getTermsOfServiceUrl());
         }
 
-        builder.contact(new Contact(this.properties.getName(),this.properties.getUrl(),this.properties.getEmail()));
+        if (this.properties.getContact()!=null){
+            com.iflytek.springbootstarterswagger.Contact contact = this.properties.getContact();
+            builder.contact(new Contact(contact.getName(),contact.getUrl(),contact.getEmail()));
+        }
 
         if (StringUtils.hasLength(this.properties.getGroupName())) {
             docket.groupName(this.properties.getGroupName());

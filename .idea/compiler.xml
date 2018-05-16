@@ -10,8 +10,16 @@
         <module name="config-sever" />
         <module name="euraka-server" />
         <module name="hello-service" />
+        <module name="help-service" />
+        <module name="msgbus" />
         <module name="rabbitmq-service" />
         <module name="spring-boot-starter-swagger" />
+        <module name="stream-consumer" />
+        <module name="stream-producer" />
+        <module name="stream-service" />
+        <module name="trace-2" />
+        <module name="trace1" />
+        <module name="zipkin-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,9 +27,17 @@
       <module name="config-sever" target="1.8" />
       <module name="euraka-server" target="1.8" />
       <module name="hello-service" target="1.8" />
+      <module name="help-service" target="1.8" />
+      <module name="msgbus" target="1.8" />
       <module name="rabbitmq-service" target="1.8" />
       <module name="spring-boot-starter-swagger" target="1.8" />
+      <module name="stream-consumer" target="1.8" />
+      <module name="stream-producer" target="1.8" />
+      <module name="stream-service" target="1.8" />
       <module name="swagger-demo" target="1.8" />
+      <module name="trace-2" target="1.8" />
+      <module name="trace1" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

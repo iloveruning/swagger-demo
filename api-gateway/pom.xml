@@ -12,7 +12,7 @@
 
     <parent>
         <groupId>com.iflytek</groupId>
-        <artifactId>swagger-demo</artifactId>
+        <artifactId>spring-cloud-demo</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -21,12 +21,12 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
     </dependencies>
 
